@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Matthew DeVoss — Forward Deployed Engineer</title>
+<meta name="description" content="Matthew DeVoss — Forward Deployed Engineer, Full-Stack, Technical Lead. Fifteen years building user-facing products; the last decade embedded on defense and space programs." />
+<meta name="author" content="Matthew DeVoss" />
+<link rel="canonical" href="https://matthew-devoss-resume.mattdevoss.workers.dev/" />
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="Matthew DeVoss — Forward Deployed Engineer" />
+<meta property="og:description" content="Full-stack engineer and technical lead who works where the customer is." />
+<meta property="og:image" content="/headshot.jpg" />
+<meta name="twitter:card" content="summary" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%231f3a5f'/><text x='50' y='68' font-size='52' font-family='Georgia,serif' fill='%23fff' text-anchor='middle'>M</text></svg>" />
+<style>
+:root{
+  --navy:#1f3a5f;
+  --navy-soft:#44566a;
+  --ink:#22262b;
+  --grey:#5a6470;
+  --rule:#d9e0e8;
+  --bg:#f4f6f8;
+  --card:#ffffff;
+  --accent:#2f6fb0;
+  --shadow:0 1px 2px rgba(16,34,56,.05), 0 12px 40px rgba(16,34,56,.08);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --navy:#9dc2ec; --navy-soft:#a9b6c4; --ink:#e4e8ed; --grey:#98a3b0;
+    --rule:#2b3543; --bg:#12161c; --card:#191f27; --accent:#7db2ea;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 12px 40px rgba(0,0,0,.45);
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font:400 16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+  padding:32px 20px 72px;
+}
+.sheet{
+  max-width:880px; margin:0 auto; background:var(--card);
+  border:1px solid var(--rule); border-radius:14px;
+  box-shadow:var(--shadow); padding:44px 52px 48px;
+}
+
+/* ---------- header ---------- */
+header{display:flex; gap:28px; align-items:center}
+.hgroup{flex:1; min-width:0}
+h1{
+  margin:0 0 2px; font-size:clamp(28px,5vw,40px); line-height:1.08;
+  letter-spacing:.02em; color:var(--navy); font-weight:700;
+}
+.tagline{margin:0 0 10px; font-size:clamp(14px,2.4vw,17px); color:var(--navy-soft); font-weight:500}
+.contact{margin:0 0 6px; font-size:14px; color:var(--grey)}
+.contact a{color:var(--grey); text-decoration:none; border-bottom:1px solid var(--rule)}
+.contact a:hover{color:var(--accent); border-bottom-color:var(--accent)}
+.sep{opacity:.5; padding:0 6px}
+.clearance{
+  margin:0; font-size:13.5px; font-weight:650; color:var(--navy);
+  display:inline-flex; align-items:center; gap:8px;
+}
+.dot{width:7px; height:7px; border-radius:50%; background:#3aa76d; flex:none}
+.avatar{
+  width:132px; height:132px; border-radius:50%; flex:none; object-fit:cover;
+  border:3px solid var(--card); box-shadow:0 0 0 1px var(--rule), 0 6px 18px rgba(16,34,56,.14);
+}
+.bar{height:3px; background:var(--navy); border-radius:2px; margin:22px 0 4px; opacity:.9}
+
+/* ---------- sections ---------- */
+section{margin-top:26px}
+h2{
+  margin:0 0 12px; font-size:12px; font-weight:700; letter-spacing:.18em;
+  text-transform:uppercase; color:var(--navy);
+  padding-bottom:6px; border-bottom:1px solid var(--rule);
+}
+.profile{margin:0; font-size:15.5px; color:var(--ink)}
+
+.skills{display:grid; gap:9px}
+.skill{display:grid; grid-template-columns:190px 1fr; gap:14px; font-size:14.5px; align-items:baseline}
+.skill b{color:var(--navy); font-weight:650}
+@media (max-width:620px){ .skill{grid-template-columns:1fr; gap:2px} }
+
+.role{margin-top:20px}
+.role:first-of-type{margin-top:0}
+.role-head{display:flex; justify-content:space-between; align-items:baseline; gap:16px; flex-wrap:wrap}
+.role-title{font-size:16.5px; font-weight:700; margin:0}
+.role-title .org{color:var(--navy)}
+.role-title .dash{color:var(--grey); font-weight:400; padding:0 4px}
+.dates{font-size:13.5px; color:var(--grey); white-space:nowrap; font-variant-numeric:tabular-nums}
+.sub{margin:2px 0 0; font-size:13.5px; font-style:italic; color:var(--grey)}
+ul{margin:8px 0 0; padding-left:20px}
+li{margin:0 0 5px; font-size:14.5px}
+li b{font-weight:650}
+li::marker{color:var(--navy); opacity:.65}
+
+.proj-head{display:flex; align-items:baseline; gap:4px; flex-wrap:wrap}
+.proj-head .name{font-size:16.5px; font-weight:700}
+.proj-head .name a{color:inherit; text-decoration:none; border-bottom:2px solid var(--rule)}
+.proj-head .name a:hover{color:var(--accent); border-bottom-color:var(--accent)}
+.proj-head .what{font-size:14.5px; font-style:italic; color:var(--grey)}
+
+.edu{display:flex; justify-content:space-between; align-items:baseline; gap:16px; flex-wrap:wrap}
+.edu .deg{font-size:16px; font-weight:700}
+.edu .school{color:var(--navy); font-weight:500}
+
+/* ---------- actions ---------- */
+.actions{
+  max-width:880px; margin:0 auto 18px; display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end;
+}
+.btn{
+  display:inline-flex; align-items:center; gap:8px; font-size:14px; font-weight:600;
+  padding:9px 16px; border-radius:9px; text-decoration:none; cursor:pointer;
+  border:1px solid var(--rule); background:var(--card); color:var(--ink);
+  box-shadow:0 1px 2px rgba(16,34,56,.05); font-family:inherit;
+}
+.btn:hover{border-color:var(--accent); color:var(--accent)}
+.btn.primary{background:var(--navy); border-color:var(--navy); color:#fff}
+@media (prefers-color-scheme: dark){ .btn.primary{color:#0f141a} }
+.btn.primary:hover{opacity:.9; color:#fff}
+@media (prefers-color-scheme: dark){ .btn.primary:hover{color:#0f141a} }
+.btn svg{width:15px; height:15px; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round}
+
+footer{max-width:880px; margin:26px auto 0; text-align:center; font-size:13px; color:var(--grey)}
+footer a{color:var(--grey)}
+
+/* ---------- print ---------- */
+@media print{
+  @page{ size:letter; margin:0.5in }
+  body{background:#fff; color:#000; padding:0; font-size:10pt}
+  .actions,footer{display:none !important}
+  .sheet{max-width:none; border:0; border-radius:0; box-shadow:none; padding:0; background:#fff}
+  h1{font-size:23pt; color:#1f3a5f}
+  .tagline{font-size:11pt; color:#445566}
+  .contact,.clearance{font-size:9.5pt}
+  .clearance{color:#1f3a5f}
+  h2{font-size:9.5pt; color:#1f3a5f; margin-bottom:6px}
+  .profile,li,.skill{font-size:9.5pt}
+  .role-title{font-size:10.5pt}
+  .dates,.sub{font-size:9pt}
+  section{margin-top:11pt}
+  .role,.proj,.edu{break-inside:avoid}
+  .avatar{width:1.32in; height:1.32in; box-shadow:none; border:0}
+  a{text-decoration:none; color:inherit}
+}
+</style>
+</head>
+<body>
+
+<div class="actions">
+  <a class="btn primary" href="/Matthew_DeVoss_FDE_Resume.docx" download>
+    <svg viewBox="0 0 24 24"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16"/></svg>
+    Download .docx
+  </a>
+  <button class="btn" onclick="window.print()">
+    <svg viewBox="0 0 24 24"><path d="M6 9V3h12v6M6 18H4v-6h16v6h-2M8 14h8v7H8z"/></svg>
+    Print / Save as PDF
+  </button>
+  <a class="btn" href="mailto:mattdevoss@gmail.com">
+    <svg viewBox="0 0 24 24"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg>
+    Email me
+  </a>
+</div>
+
+<main class="sheet">
+
+  <header>
+    <div class="hgroup">
+      <h1>Matthew DeVoss</h1>
+      <p class="tagline">Forward Deployed Engineer &nbsp;·&nbsp; Full-Stack &nbsp;·&nbsp; Technical Lead</p>
+      <p class="contact">
+        Mesa, AZ<span class="sep">·</span><a href="tel:+18184306926">(818) 430-6926</a><span class="sep">·</span><a href="mailto:mattdevoss@gmail.com">mattdevoss@gmail.com</a><span class="sep">·</span><a href="https://linkedin.com/in/mattdevoss" rel="me">linkedin.com/in/mattdevoss</a>
+      </p>
+      <p class="clearance"><span class="dot"></span>Active DoD Secret Clearance &nbsp;·&nbsp; Available for on-site customer deployments and travel</p>
+    </div>
+    <img class="avatar" src="/headshot.jpg" alt="Matthew DeVoss" width="132" height="132" />
+  </header>
+
+  <div class="bar"></div>
+
+  <section>
+    <h2>Profile</h2>
+    <p class="profile">Full-stack engineer and technical lead who works where the customer is. Fifteen years building user-facing products, the last decade embedded on high-assurance defense and space programs — sitting with NASA science teams and U.S. Army stakeholders, turning ambiguous, in-person requirements into working software demonstrated back to them every two weeks. I take products from command-line prototype to delivered application, lead the small teams that ship them, and stay in the codebase the whole way. I build and deploy with AI coding agents daily — Claude Code and Devin push my changes to live production sites — which collapses the gap between a customer asking for something and using it.</p>
+  </section>
+
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="skills">
+      <div class="skill"><b>Languages &amp; Frameworks</b><span>TypeScript, JavaScript, React, Vue, Node.js, Express, HTML5, CSS3, Tailwind CSS, Three.js</span></div>
+      <div class="skill"><b>Data &amp; Infrastructure</b><span>MongoDB, REST APIs, AWS, Docker, Podman, Cloudflare edge deployment, CI/CD</span></div>
+      <div class="skill"><b>AI-Assisted Delivery</b><span>Claude / Claude Code and Devin for agentic prototyping, code review, and deployment to live production sites; Windsurf in VS Code</span></div>
+      <div class="skill"><b>Delivery &amp; Leadership</b><span>Agile / Scrum, two-week demo cadence, requirements discovery with non-technical stakeholders, merge-request review, technical hiring, mentorship</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Professional Experience</h2>
+
+    <div class="role">
+      <div class="role-head">
+        <p class="role-title">Senior Full-Stack Engineer &amp; Project Lead<span class="dash">—</span><span class="org">Northrop Grumman</span></p>
+        <span class="dates">2023 – Present</span>
+      </div>
+      <p class="sub">U.S. Army programs · Mesa, AZ</p>
+      <ul>
+        <li><b>Embedded with the customer:</b> run live demonstrations of working software for ranking U.S. Army officials, translating field feedback and mission constraints directly into the next sprint's backlog.</li>
+        <li>Lead a four-engineer Agile team on a two-week sprint cadence — sprint planning, merge-request review, and delivery across both frontend and backend repositories — while remaining a hands-on contributor.</li>
+        <li>Ship production TypeScript across React and Vue frontends and Express / MongoDB services, containerized with Docker and Podman.</li>
+        <li><b>Deploy with AI agents in the loop:</b> use Claude Code and Devin to prototype, review, and push changes to live sites, shortening the turnaround between a stakeholder request and a deployed fix.</li>
+        <li>Own technical hiring for Tier 1 and Tier 2 engineering roles — screening, interviewing, and leveling candidates for the program.</li>
+      </ul>
+    </div>
+
+    <div class="role">
+      <div class="role-head">
+        <p class="role-title">Principal Frontend Engineer &amp; Project Lead<span class="dash">—</span><span class="org">Northrop Grumman</span></p>
+        <span class="dates">2019 – 2022</span>
+      </div>
+      <p class="sub">NASA customer · James Webb Space Telescope</p>
+      <ul>
+        <li>Took a “Google Photos”-style media platform from command-line prototype to delivered product, customized around how the science team actually worked day to day.</li>
+        <li>Indexed 12 TB of telescope imagery scattered across shared network drives and made it searchable and browsable from one application.</li>
+        <li>Cut page load times across the asset browser with lazy loading, server-side pagination, and reduced response payloads.</li>
+        <li>Demonstrated every deployment to the customer on a two-week cadence, converting live reactions into a prioritized delivery backlog.</li>
+        <li>Owned frontend architecture end to end and set the patterns the rest of the team built against.</li>
+      </ul>
+    </div>
+
+    <div class="role">
+      <div class="role-head">
+        <p class="role-title">Frontend Engineer<span class="dash">—</span><span class="org">Guaranteed Rate</span></p>
+        <span class="dates">2016 – 2019</span>
+      </div>
+      <p class="sub">Mortgage origination platform</p>
+      <ul>
+        <li>Built internal loan-origination tooling used daily by 40 loan officers: underwriting, document attachments, conditions, closing, post-closing, and customized borrower email campaigns with loan calculations and multi-language support.</li>
+        <li>Developed and maintained typed shared component libraries in TypeScript, adopted by multiple engineering teams across the organization.</li>
+      </ul>
+    </div>
+
+    <div class="role">
+      <div class="role-head">
+        <p class="role-title">Frontend Engineer<span class="dash">—</span><span class="org">VER (Video Equipment Rentals) · American Apparel</span></p>
+        <span class="dates">2011 – 2016</span>
+      </div>
+      <ul>
+        <li>Built internal web applications for equipment rental operations, and customer-facing web features for a national retail brand.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="proj">
+      <div class="proj-head">
+        <span class="name"><a href="https://unfollowed.info" rel="noopener">unfollowed.info</a></span>
+        <span class="dash" style="color:var(--grey)">—</span>
+        <span class="what">consumer web application, built and operated solo</span>
+      </div>
+      <ul>
+        <li>Averages 30,000 monthly active users, served from Cloudflare's edge network.</li>
+        <li>Sole owner across product, frontend, backend, and infrastructure — including ongoing features shipped to production with Claude Code and Devin.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="edu">
+      <span class="deg">B.S. Electrical Engineering<span class="dash" style="color:var(--grey);font-weight:400"> — </span><span class="school">California Polytechnic State University, San Luis Obispo</span></span>
+      <span class="dates">2011</span>
+    </div>
+  </section>
+
+</main>
+
+<footer>Deployed on Cloudflare Workers · <a href="mailto:mattdevoss@gmail.com">mattdevoss@gmail.com</a></footer>
+
+</body>
+</html>
