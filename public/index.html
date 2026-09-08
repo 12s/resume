@@ -82,6 +82,16 @@ h2{
 .skill b{color:var(--navy); font-weight:650}
 @media (max-width:620px){ .skill{grid-template-columns:1fr; gap:2px} }
 
+.deploys{display:grid; gap:8px}
+.deploy{font-size:14.5px; line-height:1.5}
+.deploy a{
+  color:var(--navy); font-weight:650; text-decoration:none;
+  border-bottom:1px solid var(--rule); word-break:break-word;
+}
+.deploy a:hover{color:var(--accent); border-bottom-color:var(--accent)}
+.deploy .what{color:var(--grey)}
+.deploy .dash{color:var(--grey); padding:0 4px}
+
 .role{margin-top:20px}
 .role:first-of-type{margin-top:0}
 .role-head{display:flex; justify-content:space-between; align-items:baseline; gap:16px; flex-wrap:wrap}
@@ -136,7 +146,9 @@ footer a{color:var(--grey)}
   .contact,.clearance{font-size:9.5pt}
   .clearance{color:#1f3a5f}
   h2{font-size:9.5pt; color:#1f3a5f; margin-bottom:6px}
-  .profile,li,.skill{font-size:9.5pt}
+  .profile,li,.skill,.deploy{font-size:9.5pt}
+  .deploys{gap:5px}
+  .deploy a{border-bottom:0}
   .role-title{font-size:10.5pt}
   .dates,.sub{font-size:9pt}
   section{margin-top:11pt}
@@ -182,6 +194,21 @@ footer a{color:var(--grey)}
   <section>
     <h2>Profile</h2>
     <p class="profile">Full-stack engineer and technical lead who works where the customer is. Fifteen years building user-facing products, the last decade embedded on high-assurance defense and space programs — sitting with NASA science teams and U.S. Army stakeholders, turning ambiguous, in-person requirements into working software demonstrated back to them every two weeks. I take products from command-line prototype to delivered application, lead the small teams that ship them, and stay in the codebase the whole way. I build and deploy with AI coding agents daily — Claude Code and Devin push my changes to live production sites — which collapses the gap between a customer asking for something and using it.</p>
+  </section>
+
+  <section>
+    <h2>Active Deploys</h2>
+    <div class="deploys">
+      <div class="deploy">
+        <a href="https://resume.mattdevoss.workers.dev/" rel="noopener">resume.mattdevoss.workers.dev</a><span class="dash">—</span><span class="what">this resume, served as a static-asset Worker from Cloudflare's edge.</span>
+      </div>
+      <div class="deploy">
+        <a href="https://dodgers-dashboard.mattdevoss.workers.dev/" rel="noopener">dodgers-dashboard.mattdevoss.workers.dev</a><span class="dash">—</span><span class="what">single-page Dodgers dashboard over the MLB Stats API: schedule, standings, roster, and a merged news feed, with edge-cached Worker routes and AI-written trade scenarios via Claude.</span>
+      </div>
+      <div class="deploy">
+        <a href="https://eastwestnewsservice.mattdevoss.workers.dev/" rel="noopener">eastwestnewsservice.mattdevoss.workers.dev</a><span class="dash">—</span><span class="what">server-rendered newspaper front end for a live WordPress REST API, built per request at the edge with no copied or stored content.</span>
+      </div>
+    </div>
   </section>
 
   <section>
